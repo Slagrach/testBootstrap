@@ -1,0 +1,615 @@
+/*- -------------------- <global-start> -------------------- -*/
+
+html {
+  font-family: "DINPro", serif;
+}
+
+*,
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: normal;
+}
+
+.main {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.modal-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 1rem 0;
+}
+
+.modal-header button {
+  outline: none;
+}
+
+/*- -------------------- </global-end> -------------------- -*/
+
+/** ************************* <FONTS> ************************* **/
+
+/*- -------------------- <fonts-start> -------------------- -*/
+
+@font-face {
+  font-family: "DINPro-Bold";
+  font-display: swap;
+  src: url("../fonts/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DINPro-Medium";
+  font-display: swap;
+  src: url("../fonts/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DINPro";
+  font-display: swap;
+  src: url("../fonts/DINPro.woff") format("woff"), url("../fonts/DINPro.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  font-display: swap;
+  src: url("../fonts/Myriad Pro.woff") format("woff"), url("../fonts/Myriad Pro.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*- -------------------- </fonts-end> -------------------- -*/
+
+/** ************************* <TOP> ************************* **/
+
+/*- -------------------- <top-start> -------------------- -*/
+
+.top-title {
+  font-family: 'DINPro', serif;
+  font-size: 46px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: -1.15px;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0;
+  color: #344258;
+}
+
+.top-text {
+  font-family: 'Myriad', serif;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -0.45px;
+  color: #08172d;
+}
+
+/*- -------------------- </top-end> -------------------- -*/
+
+/** ************************* <CARDS> ************************* **/
+
+/*- -------------------- <cards-start> -------------------- -*/
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 141px 0 0 0;
+}
+
+.cards .col {
+  padding: 0;
+}
+
+.cards .row {
+  margin: 0;
+}
+
+.col-auto.col-sm-12.col-md-4.col-lg-4.col-xl-4 {
+  padding: 0;
+}
+
+.card {
+  border: none;
+}
+
+.cards-link {
+  font-family: 'DINPro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.cards-link:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.cards-btn {
+  border: solid 3px #00264c;
+  padding: 24px 113px 20px 113px;
+  font-family: 'DINPro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.45px;
+  color: #344258;
+  margin: 83px 0 106px 0;
+  -webkit-transition: background-color .3s linear, color .3s linear, border-radius .3s linear;
+  -o-transition: background-color .3s linear, color .3s linear, border-radius .3s linear;
+  transition: background-color .3s linear, color .3s linear, border-radius .3s linear;
+}
+
+.cards-btn:hover {
+  background-color: #00264c;
+  color: #FFFFFF;
+  border-radius: 15px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.cards-btn:focus {
+  outline: none;
+}
+
+/*- -------------------- </cards-end> -------------------- -*/
+
+/** ************************* <FOOTER> ************************* **/
+
+/*- -------------------- <footer-start> -------------------- -*/
+
+.footer {
+  background-color: #0d1b2b;
+  padding: 32px 0 97px 0;
+}
+
+.footer-title {
+  font-family: 'DINPro', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: -1.13px;
+  color: #ffffff;
+  margin: 38px 0 85px 0;
+}
+
+.footer-text {
+  max-width: 393px;
+  font-family: 'Myriad', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: -0.45px;
+  color: #ffffff;
+}
+
+.footer-phone {
+  font-family: 'Myriad', sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  letter-spacing: -0.45px;
+  color: #ffffff;
+  padding: 0 109px 0 0;
+}
+
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-policy {
+  font-family: 'DINPro', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.35px;
+  text-decoration: underline;
+  color: #4c89c1;
+  margin: 0 0 19px 0;
+}
+
+.footer-policy:hover {
+  text-decoration: none;
+}
+
+.footer-form {
+  width: 100%;
+}
+
+.footer-form input {
+  height: 55px;
+  margin: 0 0 2px 0;
+  padding: 21px 0 23px 36px;
+}
+
+.footer-form input::-webkit-input-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form input::-moz-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form input:-ms-input-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form input::-ms-input-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form input::placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form input,
+.footer-form textarea {
+  border: none;
+  outline: none;
+  color: #fafafa;
+  background-color: rgba(84, 102, 130, 0.33);
+}
+
+.footer-form textarea {
+  height: 112px;
+  resize: none;
+  overflow: hidden;
+  padding: 24px 0 74px 36px;
+  margin: 0 0 18px 0;
+}
+
+.footer-form textarea::-webkit-input-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form textarea::-moz-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form textarea:-ms-input-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form textarea::-ms-input-placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-form textarea::placeholder {
+  font-family: 'DINPro', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-btn {
+  font-family: 'DINPro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.45px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: inherit;
+  padding: 23px 62px;
+  border: solid 3px #FFFFFF;
+  -webkit-transition: background-color .3s linear, color .3s linear, border-radius .3s linear;
+  -o-transition: background-color .3s linear, color .3s linear, border-radius .3s linear;
+  transition: background-color .3s linear, color .3s linear, border-radius .3s linear;
+}
+
+.footer-btn:hover {
+  background-color: #FFFFFF;
+  color: #344258;
+  border-radius: 15px;
+}
+
+.footer-btn:focus {
+  outline: none;
+}
+
+.block-center {
+  position: relative;
+}
+
+.block-center__mail p {
+  font-family: 'Myriad', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: -0.45px;
+  color: #3d95e3;
+  margin: 0;
+}
+
+.block-center__mail a {
+  color: #3d95e3;
+  display: block;
+  margin: 0 0 21px 0;
+}
+
+.block-center__mail:after {
+  position: absolute;
+  top: -15px;
+  left: 245px;
+  content: '';
+  border-left: solid 3px #0058a7;
+  height: 105px;
+}
+
+.block-center__mail {
+  padding: 13px 0 0 0;
+}
+
+.block-left {
+  margin: 0 0 67px 0;
+}
+
+.block-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 5px rgba(84, 102, 130, 0.33);
+  padding: 43px 43px 35px 43px;
+}
+
+.block-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*- -------------------- </footer-end> -------------------- -*/
+
+/** ************************* <MEDIA> ************************* **/
+
+/** ************************* <max-width: 992px> ************************* **/
+
+/** ************************* <min-width: 992px> ************************* **/
+
+@media (min-width: 992px) {
+  .top-title {
+    margin: 80px 0 1.5rem 0;
+  }
+
+  .cards {
+    margin: 80px 0 0 0;
+  }
+
+  .footer-phone {
+    padding: 0 80px 0 0;
+  }
+
+  .footer {
+    padding: 32px 0 40px 0;
+  }
+
+  .block-center__mail:after {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    content: '';
+    border-left: solid 3px #0058a7;
+    height: 105px;
+  }
+}
+
+@media (max-width: 992px) {
+  .top-title {
+    margin: 80px 0 1.5rem 0;
+  }
+
+  .footer-title {
+    margin: 30px 0 30px 0;
+  }
+
+  .block-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 35px 0;
+  }
+
+  .block-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 30px 0;
+  }
+
+  .block-center__mail:after {
+    position: absolute;
+    top: 0;
+    left: 358px;
+    content: '';
+    border-left: solid 3px #0058a7;
+    height: 105px;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-auto {
+    width: 100%;
+  }
+
+  .top-title {
+    font-size: 35px;
+    margin: 80px 0 1.5rem 0;
+  }
+
+  .cards {
+    margin: 80px 0 0 0;
+  }
+
+  .cards-btn {
+    padding: 24px 86px 20px 86px;
+  }
+
+  .footer-title {
+    text-align: center;
+    margin: 38px 0 38px 0;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .block-right {
+    border: none;
+    padding: 0;
+  }
+
+  .footer-form {
+    margin: 0 0 30px 0;
+  }
+
+  .footer-policy {
+    margin: 0 0 40px 0;
+  }
+
+  .footer-btn {
+    padding: 23px 59px;
+  }
+
+  .block-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer-phone {
+    padding: 0;
+  }
+
+  .block-center__phone {
+    margin: 0 0 30px 0;
+  }
+
+  .block-center__mail:after {
+    position: absolute;
+    top: 135px;
+    left: 0;
+    content: '';
+    border-left: none;
+    border-bottom: solid 3px #0058a7;
+    width: 100%;
+    height: auto;
+  }
+
+  .block-center__mail {
+    padding: 13px 0 30px 0;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media (min-width: 992px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 992px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 767px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
